@@ -13,13 +13,14 @@ def mukemmelSayiBul():           # Klasik olarak fonksiyonlari yerlestirdim.
         if bolenToplami == girilenSayi:
             print("Bu sayi bir mukemmel sayidir.!!")            
             input("Cikmak icin bir tusa basin!")
-            os.system('cls' if os.name == 'nt' else 'clear')
+            os.system('cls | | clear')
             break
         elif bolenToplami != girilenSayi:
             print("Degildir")
             input("Cikmak icin bir tusa basin!")
-            os.system('cls' if os.name == 'nt' else 'clear')      # Cikmak icin bir tusa bastiracagiz ve 
-            break                                                 # Terminali temizletecegiz.
+            break
+            os.system('cls | | clear')      # Cikmak icin bir tusa bastiracagiz ve 
+                                                             # Terminali temizletecegiz.
 
 def TamBolenleriBul():
     while secim:                                                                              
@@ -35,8 +36,9 @@ def TamBolenleriBul():
             print("Asal sayi secmissin reyis")                    # Birde kendisine bolunebiliyor zaten. Onu saymiyoruz bile
             input("Cikmak icin bir tusa basiniz")
             break
-            os.system('cls' if os.name == 'nt' else 'clear')
+            os.system('cls | | clear')
 
+            
 def AsalMiBu():
     while secim:
         girilenSayi = int(input("Asal sayi olup olmadigini bulmak istediginiz sayiyi giriniz: "))
@@ -46,13 +48,15 @@ def AsalMiBu():
                                                            # Kalan eger 0 ise Asal Sayi degildir.
                 print("Senin Sayi asal degil.")
                 input("Cikmak icin bir tusa basin!")
-                os.system('cls' if os.name == 'nt' else 'clear')
                 break
+                os.system('cls | | clear')
+                
             else:                                                         
                 print("Senin sayi asal cikti.")
                 input("Cikmak icin bir tusa basin!")
-                os.system('cls' if os.name == 'nt' else 'clear')
                 break
+                os.system('cls | | clear')
+                
         break
 
 def ArmstrgonMuBu():
@@ -67,11 +71,11 @@ def ArmstrgonMuBu():
     if num == sum:
         print(num, "bir Armstrong sayidir")
         input("Cikmak icin bir tusa basin")
-        os.system('cls' if os.name == 'nt' else 'clear')
+        os.system('cls | | clear')
     else:
         print(num, "bir Armstrong sayi degildir")
         input("Cikmak icin bir tusa basin!")
-        os.system('cls' if os.name == 'nt' else 'clear')
+        os.system('cls | | clear')
 
 def SayiyiYaziyaCevir():
     birler = ["","Bir","Iki","Uc","Dort","Bes","Alti","Yedi","Sekiz","Dokuz"]
@@ -88,12 +92,12 @@ def SayiyiYaziyaCevir():
 
 
 def CarpimTablosu():
-    for i in range(1,20):
+    for i in range(1,11):
         print("***************************************************************")
-        for j in range(1,20):
+        for j in range(1,11):
             print(f"{i} x {j} = {i*j}")                           # Dongu icinde dongu kullanarak her seferinde
     input("Cikmak icin bir tusa basin!")                          # Donen iki degisken elde ettik.
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('cls | | clear')
 
 
 while 1:
